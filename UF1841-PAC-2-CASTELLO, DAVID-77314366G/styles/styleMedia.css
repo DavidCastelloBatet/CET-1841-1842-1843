@@ -1,0 +1,34 @@
+/* 50.- Defineix que un conjunt de regles nomes s'apliqui 
+quan la pantalla tingui una grandaria menor de 600px */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: yellow;
+    font-size: 12px;
+  }
+  h1 {
+    background-color: white;
+  }
+
+  img {
+    width: 100px;
+  }
+}
+
+/* Aquest media quary cubreix l'espai que no cubreix la MQ anterior ni la
+fulla style.css, ja que aquesta "deixa de funcionar" quan l'ample de
+la pantalla es inferior a 800px */
+
+@media screen and (min-width: 601px) and (max-width: 799px) {
+  body {
+    background-color: red;
+    font-size: 17px;
+  }
+  h1 {
+    color: white;
+    background-color: green;
+  }
+  img {
+    width: 150px;
+  }
+}

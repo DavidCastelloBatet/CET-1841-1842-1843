@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cet Diari - Afegeix la teva Noticia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cet Diari</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Ultima Hora - Portada</a></li>
+          <li><a href="#">Internacional</a></li>
+          <li><a href="#politica">Política</a></li>
+          <li><a href="#">Societat</a></li>
+          <li><a href="#">Esports</a></li>
+          <li><a href="#">Economia</a></li>
+          <li><a href="#">Cultura</a></li>
+          <li><a href="#">Tendències</a></li>
+          <li>
+            <a href="#">Agregador de noticies</a>
+            <ul>
+              <li>
+                <a class="active" href="afegeixNoticia.html">Afegeix noticia</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Buscar.." name="buscar" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <!-- sistema de navegacio "molles de pa"-->
+      <p>CET Diari > Agregador de Noticies > Afegeix Noticia</p>
+    </header>
+
+    <h1>Afegeix la teva noticia</h1>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Autor</legend>
+        <label>
+          Com et dius?<br />
+          <input
+            type="text"
+            name="autor"
+            placeholder="David Castello"
+            required
+          />
+        </label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Noticia</legend>
+        <label for="seccio">Tria la secció</label><br />
+        <select name="seccio" id="seccio">
+          <option value="ultimaHora">Última hora</option>
+          <option value="internacional">Internacional</option>
+          <option value="politica">Política</option>
+          <option value="societat">Societat</option>
+          <option value="esports">Esports</option>
+          <option value="economia">Economia</option>
+          <option value="cultura">Cultura</option>
+          <option value="tendencies">Tendències</option></select
+        ><br /><br />
+        <label for="noticia">Noticia</label><br />
+        <textarea
+          id="noticia"
+          name="noticia"
+          cols="80"
+          rows="10"
+          placeholder="Escriu el texte que vols enviar..."
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="adjuntar">Si vols adjuntar algun arxiu, clica</label><br />
+        <input type="file" id="arxiuAdjunt" name="arxiuAdjunt" />
+        <br />
+      </fieldset>
+      <br />
+
+      <input type="submit" name="submit" value="Enviar Noticia" />
+    </form>
+
+    <footer>
+      <h2>Navegacio Secundaria</h2>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Ultima Hora - Portada</a></li>
+          <li><a href="#">Internacional</a></li>
+          <li><a href="#">Política</a></li>
+          <li><a href="#">Societat</a></li>
+          <li><a href="#">Esports</a></li>
+          <li><a href="#">Economia</a></li>
+          <li><a href="#">Cultura</a></li>
+          <li><a href="#">Tendències</a></li>
+          <li>
+            <a href="#">Agregador de noticies</a>
+            <ul>
+              <li><a href="afegeixNoticia.html">Afegeix noticia</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <h2>Social Media</h2>
+      <ul>
+        <li><a href="http://www.facebook.es">Facebook</a></li>
+        <li><a href="http://www.instagram.com">Instagram</a></li>
+        <li><a href="http://www.twitter.com">Twitter</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

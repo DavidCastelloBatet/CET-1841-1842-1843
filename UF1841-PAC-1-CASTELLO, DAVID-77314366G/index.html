@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- Una definició d'idioma -->
+<!-- Al pasar el validador HTML apareix el seguent WARNING:
+This document appears to be Lorem ipsum text but the html start tag has lang="ca". Consider using lang="zxx" (or variant) instead.
+Quan es substitueixi el Lorem ipsum per text real en català, el WARNING desapareix
+-->
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Un llistat de paraules clau adreçades als sistemes d'indexacio dels cercadors web -->
+    <meta name="keywords" content="Diari, noticies" />
+    <!-- Una descripció adreçada als sistemes d'indexació dels cercadors web -->
+    <meta name="description" content="Diari noticies tecnologiques" />
+    <!-- Un títol -->
+    <title>CET Diari</title>
+  </head>
+  <body>
+    <!-- Encapçalats (header) -->
+    <header>
+      <!-- Encapçalat H1,...) -->
+      <h1>CET Diari</h1>
+      <nav>
+        <!-- Llista desordenada (conté la navegació) -->
+        <ul>
+          <li>
+            <!-- Un enllaç a una pagina -->
+            <a href="https://www.w3schools.com" target="_blank"
+              >W3Schools.com</a
+            >
+          </li>
+          <li>
+            <!-- Un enllaç a una ancora del propi document -->
+            <a href="#horaris">Els nostres horaris</a>
+          </li>
+          <li>
+            <!-- Un enllaç que descarrega un document en format pdf -->
+            <a
+              href="./multimedia/instruccions.pdf"
+              download="instruccions"
+              target="_blank"
+              >Descàrrega instruccions en pdf</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- i un cos-->
+    <main>
+      <!-- Seccions de document -->
+      <!-- Seccio articles -->
+      <section>
+        <header>
+          <h2>Noticies</h2>
+        </header>
+        <!-- Articles -->
+        <article>
+          <header>
+            <h3>Article 1</h3>
+          </header>
+          <!-- Video -->
+          <video width="400" controls>
+            <source src="./multimedia/mov_bbb.mp4" type="video/mp4" />
+            El navegador no suporta HTML video.
+          </video>
+          <!-- Paragraf -->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium molestiae atque id amet veniam magnam accusamus ipsum
+            repellat sapiente iusto! Similique dolor accusamus omnis repellendus
+            excepturi ipsam a tenetur corporis. Sit aut accusantium doloremque
+            facere soluta tenetur. Eos delectus ab quidem eligendi. Consectetur
+            numquam sequi dolores velit, ut, nesciunt error tempore quod ab
+            excepturi iure repellat. Exercitationem illum nulla animi? Porro
+            corrupti illum quia voluptate ex ut aliquid sunt eveniet. Voluptates
+            illo totam ea harum vel, deleniti architecto soluta excepturi earum
+            corporis autem ullam. Sequi neque quam molestiae repellendus itaque.
+            Repellendus consequatur eius itaque est earum nulla optio architecto
+            labore ea iste odio, quisquam excepturi, tempora autem facere iusto
+            asperiores pariatur commodi minima perferendis quas. Quisquam
+            aliquam accusantium ipsa quam. Repellat quisquam praesentium labore
+            adipisci repellendus, quaerat illo ipsum exercitationem veniam non
+            deserunt nostrum tempora explicabo. Quia, eveniet nesciunt. Unde
+            rerum minima porro, iure fugit dolorum dolores cum odit officia?
+            Temporibus delectus itaque, ad non sit eius. Repellat quisquam
+            praesentium labore adipisci repellendus, quaerat illo ipsum
+            exercitationem veniam non deserunt nostrum tempora explicabo. Quia,
+            eveniet nesciunt. Unde rerum minima porro, iure fugit dolorum
+            dolores cum odit officia? Temporibus delectus itaque, ad non sit
+            eius.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h3>Article 2</h3>
+          </header>
+          <img
+            src="./multimedia/imatgeHTML.png"
+            alt="Imatge amb l'etiqueta HTML"
+            title="Imatge amb l'etiqueta HTML"
+          />
+          <p>
+            <!-- Una abreviació marcada com a tal -->
+            L' <abbr title="Hipertext Markup Languaje">HTML</abbr> es un
+            llenguatge de marcat.
+          </p>
+          <p>
+            Dicta, deserunt, distinctio magnam inventore ullam laudantium,
+            voluptatem quibusdam ab voluptas unde fugit. Architecto accusamus
+            cupiditate corrupti? Labore, iure quisquam cum odio accusantium nemo
+            nam ducimus excepturi possimus perspiciatis nisi pariatur doloremque
+            impedit repellat fugit temporibus tempore! Cumque quam vero aut?
+            Ullam, ex! Dignissimos dolores quasi, laboriosam laudantium, aliquam
+            delectus ad optio cumque dicta, perferendis voluptatum vitae.
+            <!-- Salt de linea --><br />
+            Voluptates ex impedit pariatur asperiores obcaecati voluptas
+            perspiciatis facere at, repudiandae consequuntur sed aperiam cumque
+            sit! Beatae, suscipit minus, quasi fuga distinctio quos, optio
+            debitis accusamus impedit error ducimus dolor? Aspernatur deserunt
+            pariatur reprehenderit, cupiditate modi quos libero dolorem ratione.
+            Dolor tenetur sequi exercitationem cumque quas. Numquam veniam eum
+            ullam magnam debitis iure consequatur alias, autem minima enim
+            delectus fugit officia expedita corrupti iusto impedit fuga eveniet
+            pariatur voluptatum. Repellat quas ex adipisci ab illum ipsum!
+          </p>
+        </article>
+      </section>
+      <!-- Seccio formulari  -->
+      <section>
+        <header>
+          <h2>Formulari de Subscripcio</h2>
+        </header>
+        <!-- Formulari -->
+        <!-- Enviar POST i a l'adreça http://www.host.cat/xal/ifcd0210/index.php-->
+        <form
+          name="formulariSubscripcio"
+          id="formulariSubscripcio"
+          action="http://www.host.cat/xal/ifcd0210/index.php"
+          method="post"
+        >
+          <fieldset>
+            <legend>Dades del Subscriptor</legend>
+            <!-- camp Text -->
+            <label for="nomSubscriptor">Nom del Subscriptor:</label><br />
+            <input
+              type="text"
+              name="nom"
+              id="nomSubscriptor"
+              placeholder="Introdueix el nom..."
+              size="50"
+              required
+            /><br />
+            <!-- camp Data -->
+            <label for="dataSubscripcio"
+              >Introdueix la data de Subscripció:</label
+            ><br />
+            <input
+              type="date"
+              name="dataSubscripcio"
+              id="dataSubscripcio"
+              required
+            /><br />
+          </fieldset>
+          <fieldset>
+            <legend>Dades de la Subscripció</legend>
+            <!-- desplegable 3 elements -->
+            <label for="tempsSubscripcio">Escull el temps de subscripció:</label
+            ><br />
+            <select name="subscripcio" id="tempsSubscripcio">
+              <option value="1 mes">1 mes</option>
+              <option value="3 mesos">3 mesos</option>
+              <option value="6 mesos">6 mesos</option>
+              <option value="1 any">1 any</option></select
+            ><br />
+            <!-- Llistat de seleccio multiple, amb element seleccionat per defecte -->
+            <label for="formatDiari">En quin format el voldras ?</label><br />
+            <input
+              type="radio"
+              name="format"
+              value="paper"
+              id="formatDiari"
+              checked
+            />Paper<br />
+            <input type="radio" name="format" value="digital" />Digital<br />
+            <input type="radio" name="format" value="mail" />Mail<br />
+            <!-- Casella -->
+            <br />
+            <p>Quina edicio voldras ?</p>
+            <label for="edicioMati">Edicio Mati</label>
+            <input type="checkbox" id="edicioMati" name="edicioMati" checked />
+            <label for="edicioTarda">Edicio Tarda</label>
+            <input type="checkbox" id="edicioTarda" name="edicioTarda" />
+            <label for="edicioNit">Edicio Nit</label>
+            <input type="checkbox" id="edicioNit" name="Edicio Nit" /><br />
+            <!-- camp ocult -->
+            <input
+              type="hidden"
+              id="subsPrimavera"
+              name="subsPrimavera"
+              value="campanyaSubscripcioPrimavera"
+            />
+          </fieldset>
+          <!-- Boto d'enviament -->
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Continguts relacionats -->
+    <aside>
+      <section>
+        <header>
+          <h2>Redacció</h2>
+        </header>
+        <!-- Capes -->
+        <div class="redaccio">
+          <h3>Oficina Vilafranca</h3>
+          <!-- Llista ordenada -->
+          <ol>
+            <li>Joana</li>
+            <li>Joan</li>
+            <li>Pere</li>
+            <li>Maria</li>
+          </ol>
+        </div>
+        <div class="redaccio">
+          <h3>Oficina Berlin</h3>
+          <ol>
+            <li>Hanna</li>
+            <li>John</li>
+            <li>Peter</li>
+            <li>Mary</li>
+          </ol>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Peu de pàgina -->
+    <footer>
+      <h3>On Estem ?</h3>
+      <!-- mapa (iframe) indicant on es troben les oficines -->
+      <!-- div per modificar estils -->
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.482646772488!2d1.7007973509802212!3d41.34186197916663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4798ee28317e3%3A0x80149c66fa1200fb!2sCentro%20Ense%C3%B1anzas%20T%C3%A9cnicas%20Pened%C3%A8s%20SL!5e0!3m2!1ses!2ses!4v1649633014621!5m2!1ses!2ses"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <!-- Dades tabulades -->
+      <h3>Horari d'Atenció al Públic</h3>
+      <div id="horaris" class="horaris">
+        <table>
+          <thead>
+            <tr>
+              <th>Seu</th>
+              <th>Contact</th>
+              <th>Horari</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vilafranca</td>
+              <td>Maria Anders</td>
+              <td>9 a 13 - 14 a 18</td>
+            </tr>
+            <tr>
+              <td>Barcelona</td>
+              <td>Francisco Chang</td>
+              <td>9 a 13 - 14 a 18</td>
+            </tr>
+            <tr>
+              <td>Paris</td>
+              <td>Roland Mendel</td>
+              <td>8 a 12 - 13 a 17</td>
+            </tr>
+            <tr>
+              <td>Berlin</td>
+              <td>Helen Bennett</td>
+              <td>8 a 12 - 14 a 18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+/* Per tal de facilitar la posterior correcció de
+l'exercici, i sent conscient d'alguna inevitable
+mala praxi en forma de repeticions, aniré desenvolupant 
+de manera seqüencial tots els punts de l'enunciat 
+
+També he intentat que els comentaris al CSS tinguin el
+seu equivalent identic a l'HTML i poder ser mes fàcil 
+de visualitzar.
+
+El punt 50 (media querys) està resolt a styleMedia.css
+*/
+
+/* PART 1 INSERCIO: Els 3 punts de la Part 1 estan 
+desenvolupats a index.html */
+
+/* PART 2: SELECTORS*/
+/*1.4 Defineix un exemple de selector per a cadascun dels
+que apareixen en aquest llista*/
+/* NOTA: posare combinacions "poc habituals" de selectors 
+per tal de que no molestin mes endavant, que NO tindrán
+un equivalent real al HTML */
+
+/* Unics 1 Universal*/
+* {
+  background-color: rgb(212, 242, 242);
+}
+body {
+  margin: 20px;
+}
+
+/* Unics 2 Per classe */
+.nomClase {
+  color: white;
+}
+
+/* Unics 3 Per nom d'element */
+div {
+  color: white;
+}
+
+/* Unics 4 Per atribut */
+a[target] {
+  color: white;
+}
+
+/* Unics 5 Pseudoclases dinàmiques */
+a:hover {
+  color: white;
+}
+
+/* Unics 6 Pseudoelements */
+article ::first-letter {
+  color: white;
+}
+
+/* Unics 7 Pseudoclases estructurals */
+li:nth-child(4) {
+  color: white;
+}
+
+/* Unics 8 Per ID */
+#nomID {
+  color: white;
+}
+
+/* Combinacions 9 Selectors descendents */
+div a {
+  color: yellow;
+}
+
+/* Combinacions 10 Selector de fills*/
+div > a {
+  color: yellow;
+}
+
+/* Combinacions 11 Selector germans adjacents */
+div + a {
+  color: yellow;
+}
+
+/* Combinacions 12 Selector general de germans */
+div ~ a {
+  color: yellow;
+}
+
+/* Combinacions 13 Selector múltiple */
+h1,
+h2,
+h3 {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+  padding: 5px;
+  text-align: center;
+}
+/* final PART 2: SELECTORS*/
+
+/* A partir d'aqui CSS i HTML concorda*/
+/* PART 3: REGLES */
+
+/* Continguts Font */
+.mayuscula {
+  /* 1.- Defineix una familia de font */
+  font-family: sans-serif;
+  /* 2.- Defineix una transf de font a majuscules */
+  text-transform: uppercase;
+  /* 3.- Defineix una grandaria de lletra */
+  font-size: 15px;
+  /* 4.- Defineix una distancia entre paraules */
+  word-spacing: 15px;
+}
+
+.minuscula {
+  /* 2.- Defineix una transf de font a minuscula */
+  text-transform: lowercase;
+  /* 5.- Defineix un estil de font */
+  font-style: oblique;
+  /* 6.- Defineix un color de text */
+  color: red;
+}
+
+.sombra {
+  font-size: 25px;
+  /* 7.- Defineix una ombra per alguna font*/
+  text-shadow: 0.5px 0.5px 0px yellow;
+}
+/* final Contingut Font */
+
+/* Contingut Imatges */
+.centrarImatge {
+  height: 300px;
+  width: 300px;
+  /* 8.- Centrat d'una imatge */
+  /* Convertim la imatge en un element block i establim
+  el marge dret i esquerra a auto */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 9.- Afegeix una icona externa */
+/* Afegim un script al final del body de l'index.html i la
+icona de font-awesom */
+.icona {
+  text-align: center;
+}
+/* final Contingut Imatges */
+
+/* Contenidors Propietats */
+.pare,
+.fill {
+  color: black;
+  padding: 5px;
+}
+.pare {
+  /* 10.- Defineix la posició per a un contenidor */
+  position: relative;
+  /* 12.-Assignar l'amplada d'un contenidor */
+  width: 300px;
+  /* 13.- Assignar l'alçada d'un contenidor */
+  height: 300px;
+  /* 14 - 15 - 16 gruix - estil - color contorn, definit
+  amb aquest ordre */
+  border: 3px dotted blue;
+  /* 17.- Defineix contorns arrodonits */
+  border-radius: 15px;
+  /* 19.- Defineix una imatge de fons */
+  background-image: url(../img/pollet.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.fill {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  border: 1px solid red;
+  /* 11.- Defineix la profunditat d'un contenidor.
+  Es crea com una pila d'elements. Si li donem un numero 
+  negatiu quedara darrera del pare */
+  z-index: 10;
+  /* 18.- Defineix un color de fons*/
+  background-color: aliceblue;
+}
+/* final Contenidors Propietats */
+
+/* Contenidors Tipus */
+/* 20.- Defineix una direccio de text */
+.reves {
+  direction: rtl;
+}
+/* 21.- Fer desapareixer la linea inferior dels enllaços */
+.senseLinea {
+  text-decoration: none;
+}
+/* 22.- Canviar el marcador d'una llista a nombres romans */
+.numerosRomans {
+  list-style-type: upper-roman;
+}
+
+th,
+td {
+  border: 1px solid;
+}
+
+td {
+  text-align: center;
+  vertical-align: center;
+  /* 23.- Defineix una amplada de files */
+  width: 200px;
+  /* 24.- Defineix una alçada de files */
+  height: 40px;
+}
+
+table {
+  /* 25.- Defineix una separacio entre cel.les */
+  border-spacing: 10px;
+}
+
+tfoot {
+  /* 26.- Defineix una posicio per el peu de la taula */
+  caption-side: bottom;
+}
+
+.imatgeNoRepetir {
+  width: 500px;
+  height: 200px;
+  background-color: grey;
+  background-image: url(../img/pollet.webp);
+  background-size: contain;
+  /* 27.- Definir imatge de fons que no es repeteixi */
+  background-repeat: no-repeat;
+}
+/* final Contenidors Tipus */
+
+/* Contenidors i continguts */
+.floatPollet img {
+  width: 200px;
+  height: 200px;
+  /* 30.- Defineix un marge */
+  margin: 20px;
+  /* 32.- Fes que un element floti a la dreta.
+  En aquest cas floto el text a la dreta de la imatge */
+  float: left;
+}
+
+.floatParraf p {
+  color: black;
+  font-size: 20px;
+  /* 28.- Defineix una alineacio de text */
+  text-align: left;
+  /* 29.- Defineix una sangria */
+  text-indent: 50px;
+  /* 33.- Defineix un encoiximent */
+  padding: 20px;
+}
+
+/* 31.- Fusiona dos marges 
+  he trobat aquesta informació a:
+  https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+  ho haig així.
+  */
+.fusioMarges div {
+  color: red;
+  margin: 2rem 0;
+  background: lavender;
+}
+
+.fusioMarges p {
+  color: green;
+  margin: 0.4rem 0 1.2rem 0;
+  background: yellow;
+}
+
+/* 34 - 35 Alineacions / Flexbox */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+
+.contCol {
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+  /* 36.- Defineix 3 columnes per al contingut d'un contenidor */
+  column-count: 3;
+  /* 37.- Defineix una distancia entre files*/
+  column-gap: 30px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: blue;
+}
+/* final Contenidors i continguts */
+
+/* Efectes */
+.amaga,
+.oculta,
+.opac,
+.transparent {
+  width: 200px;
+  height: 200px;
+}
+
+.amaga {
+  background-color: red;
+  /* 38.- Amaga un element - no es veu i desapareix de l'espai que ocupa*/
+  display: none;
+}
+
+.oculta {
+  background-color: green;
+  /* 39.- Oculta un element - no es veu, pero conserva l'espai*/
+  visibility: hidden;
+}
+
+.opac {
+  background-color: blue;
+  /* 40.- Fes que un element sigui un 50% opac */
+  opacity: 0.5;
+}
+
+.transparent {
+  /* 41.- Estableix una transparencia */
+  background-color: rgba(100, 150, 200, 0.3);
+}
+
+.resize {
+  color: black;
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  /* 42.- Canvia la grandaria horitzontal d'un element */
+  resize: horizontal;
+  overflow: auto;
+}
+
+.canviCursor {
+  color: black;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(156, 171, 228);
+}
+
+.canviCursor:hover {
+  /* 43.- Fes que es canvii el cursor */
+  cursor: pointer;
+}
+
+.rotarElement {
+  color: black;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.rotarElement:hover {
+  /* 44.- Rota un element */
+  transform: rotate(45deg);
+}
+
+.rotarElementZ {
+  color: black;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.rotarElementZ:hover {
+  /* 45.- Rota un element en l'eix Z*/
+  transform: rotateZ(90deg);
+}
+
+.transicions {
+  color: black;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  background: aquamarine;
+  /* 46.- Fes que una transicio duri com a minim 4 segons */
+  transition: width 4s;
+  /* 47.- Retarda una transicio 2s */
+  transition-delay: 2s;
+}
+
+.transicions:hover {
+  width: 300px;
+}
+
+.laRosalia {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  /* 48.- Fes una transformacio amb transicio */
+  transition: width 2s, height 2s, transform 5s;
+}
+
+.laRosalia:hover {
+  width: 300px;
+  height: 300px;
+  background: green;
+  transform: rotate(360deg);
+}
+
+/* 49.- Genera una animacio */
+.animacio {
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+/* 49.- Genera una animacio */
+@keyframes example {
+  from {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+  }
+  to {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    color: black;
+  }
+}
+/* final Efectes*/
+
+/* Condicionals - Media Queries */
+/* Anar a la fulla styleMedia.css*/
+
+/* final PART 3: REGLES */
