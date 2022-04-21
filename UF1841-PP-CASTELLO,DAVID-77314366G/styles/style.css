@@ -1,0 +1,58 @@
+/* faig servir trea tipus de selectors */
+
+body {
+  background-color: rgb(203, 236, 241);
+}
+
+#formulariSubscripcio {
+  background-color: rgb(165, 157, 157);
+}
+
+/* Unics 6 Pseudoelements */
+article ::first-letter {
+  color: rgb(231, 63, 63);
+}
+
+/* ----- CONTINGUTS ----- */
+
+p {
+  font-size: 20px;
+}
+
+/* ----- CONTENIDORS ----- */
+
+div {
+  border: 2px solid red;
+}
+
+/* ----- CONTENIDORS I CONTINGUTSS ----- */
+
+/* Contenidors i continguts */
+.floatPollet img {
+  width: 200px;
+  height: 200px;
+  /* 30.- Defineix un marge */
+  margin: 20px;
+  /* 32.- Fes que un element floti a la dreta.
+  En aquest cas floto el text a la dreta de la imatge */
+  float: left;
+}
+
+.floatParraf p {
+  color: black;
+  font-size: 20px;
+  /* 28.- Defineix una alineacio de text */
+  text-align: left;
+  /* 29.- Defineix una sangria */
+  text-indent: 50px;
+  /* 33.- Defineix un encoiximent */
+  padding: 20px;
+}
+
+/* ----- EFECTES ----- */
+
+.rotarElement:hover {
+  /* 44.- Rota un element */
+  transform: rotate(45deg);
+}
+/* ----- MEDIA QUERIES ----- */
